@@ -346,7 +346,8 @@ module CheesyParts
         @part.priority = params[:priority] if params[:priority]
       end
       @part.save
-      redirect params[:referrer] || "/parts/#{params[:id]}"
+      #redirect params[:referrer] || "/parts/#{params[:id]}"
+      redirect "/parts/#{params[:id]}"
     end
 
     get "/parts/:id/release" do

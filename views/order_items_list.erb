@@ -15,7 +15,7 @@
     <% order_items.each do |item| %>
       <tr id="order-item-<%= item.id %>">
         <td>
-          <a href="/projects/<%= @project.id %>/orders/stats" style="color: black;">
+          <a href="/projects/<%= @project.id %>/orders/stats" style:"color: black">
             <%= item.order.vendor_name rescue "" %>
           </a>
         </td>
